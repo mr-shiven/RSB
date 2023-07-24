@@ -11,7 +11,7 @@ const { sendOtp, validateOtp } = require('./otpValidation');
 
 const db = mysql.createConnection({
    host: 'rsb-live-db.c1csqvamawwl.ap-south-1.rds.amazonaws.com',
-  port: 3306,
+  port: peocess.env.PORT || 3030,
   user: 'root',
   password: 'password',
   database: 'rakhtsashaktdatabase',
@@ -520,5 +520,5 @@ app.post("/logout", (req, res) => {
 // START THE SERVER
 
 app.listen(4000, () => {
-  console.log('Server started on port 4000');
+  console.log(`server started on port ${PORT}`);
 });
