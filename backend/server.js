@@ -520,5 +520,5 @@ app.post("/logout", (req, res) => {
 // START THE SERVER
 
 app.listen(4000, () => {
-  console.log(`server started on port ${PORT}`);
+  console.log(`server started on port ${port}`);
 });
