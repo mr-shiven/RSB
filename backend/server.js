@@ -14,7 +14,7 @@ const db = mysql.createConnection({
   port: process.env.PORT || 3030,
   user: 'root',
   password: 'password',
-  database: 'rakhtsashaktdatabase',
+  database: 'rsb-db',
 });
 
 // connect to the database
