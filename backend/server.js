@@ -11,7 +11,7 @@ const { sendOtp, validateOtp } = require('./otpValidation');
 
 const db = mysql.createConnection({
    host: 'database-1.cwdk93qv9rtl.ap-south-1.rds.amazonaws.com',
-  port: process.env.PORT || 3030,
+  port: 3306,
   user: 'root',
   password: 'password',
   database: '',
@@ -519,6 +519,6 @@ app.post("/logout", (req, res) => {
 
 // START THE SERVER
 
-app.listen(4000, () => {
+app.listen(process.env.PORT || 3030, () => {
   console.log(`server started on port ${process.env.PORT}`);
 });
