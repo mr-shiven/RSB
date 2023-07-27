@@ -10,11 +10,11 @@ const { sendOtp, validateOtp } = require('./otpValidation');
 
 
 const db = mysql.createConnection({
-   host: 'rsb-db.cwdk93qv9rtl.ap-south-1.rds.amazonaws.com',
+   host: 'database-1.cwdk93qv9rtl.ap-south-1.rds.amazonaws.com',
   port: process.env.PORT || 3030,
   user: 'root',
   password: 'password',
-  database: 'rsb-db',
+  database: '',
 });
 
 // connect to the database
