@@ -16,8 +16,9 @@ async function sendMailToPotentialDonors(donation_id, potentialDonors, recipient
     port: 465,
     secure: true,
     auth: {
-      user: process.env.RSB_EMAIL,
-      pass: process.env.RSB_PASSWORD,
+      
+      user: 'rakhtsashaktbharat@gmail.com',
+      pass: 'wphwvlvjxdtoyalg',
     },
     connectionTimeout: 5 * 60 * 30000,
   });
