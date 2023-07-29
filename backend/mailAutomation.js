@@ -16,7 +16,7 @@ async function sendMailToPotentialDonors(donation_id, potentialDonors, recipient
     port: 465,
     secure: true,
     auth: {
-      
+      type: 'login',
       user: 'rakhtsashaktbharat@gmail.com',
       pass: 'wphwvlvjxdtoyalg',
     },
